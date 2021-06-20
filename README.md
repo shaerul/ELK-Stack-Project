@@ -4,7 +4,9 @@ The diagram below is the **Cloud Security Architecture** to be implemented on Mi
 
 The step by step tasks to achevie the Project Goal was done in following few steps
 
-1. Prepareing Available, Reliable and Secure Cloud IT Infrastructure 
+1. provisioning ELK Stack container in **Azure** Public Cloud Leveraging the prepared Available, Reliable and Secure Cloud IT Infrastructure (done in previous class works) 
+2. Provisioning ELK Stack with Ansible (IaC - Infrastructure as Code)
+3. Provisioning Filebeat and Metricbeat for DVWA VMs a precursor to SIEM for SoC operations  
 
 -- _Creating 4 Linux (Ubuntu20x) in Microsoft Azure_
 
