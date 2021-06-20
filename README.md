@@ -17,16 +17,36 @@ The following **.yml** config files have been tested and used for **Ansible** to
 - [Installing Filebeat collector agent](Ansible/roles/install-filebeat-collector-for-elk-playbook.yml)
 - [Installing Metricbeat collector agent](Ansible/roles/install-metricbeat-collector-for-elk-playbook.yml)
 
-This document contains the following details:
+This document Covers the following details:
 
 - Description of the Topology
-- Security and Access Policies
+- Access Policies
 - ELK Configuration
-  - **Filebeat** Applicaton and system Log files being collected
-  - **Metricbeat** VMs Being Monitored
-- The application of the Ansible Build
+  - Beats in Use
+  - Machines Being Monitored
+- How to Use the Ansible Build
 
 ### Description of the Topology
+
+Practically in a Software Defined Data Center hosted in a public or private cloud must have the four critical attributes 
+
+- Security
+- Scalabality
+- Reliability
+- Availability
+
+The above base diagram plotted as **Cloud Security Architecture** has covered all the above criteria. Most of the attributes have been inherited from the Azure Cloud iteself and the rest have been configured reasonablity as much as required by the Project Objective. Too much Security hardening might have restricted us from getting the intended result.
+
+| Name        | Function                | IP Address | Operating System |
+|------------ |-------------------------|------------|------------------|
+| Security    | - Network Security Group| 10.0.0.1   | Linux            |
+|             | - Dockerized Container  |            |                  |
+|             | - Reverse Proxy (Load Balancer)
+| Scalability | Inherited from Azure    |            |                  |
+| Reliablity  | Inherited from Azure    |            |                  |
+| Availability| Load Balancer           |            |                  |
+
+
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
