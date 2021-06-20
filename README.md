@@ -19,13 +19,12 @@ The following **.yml** config files have been tested and used for **Ansible** to
 
 This document contains the following details:
 
-- Description of the Topologu
-- Access Policies
+- Description of the Topology
+- Security and Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
-
+  - **Filebeat** Applicaton and system Log files being collected
+  - **Metricbeat** VMs Being Monitored
+- The application of the Ansible Build
 
 ### Description of the Topology
 
