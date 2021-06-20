@@ -22,8 +22,8 @@ This document Covers the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-   - Filebeat Applicaton and system Log files being collected
-   - Metricbeat VMs Being Monitored
+   - **_Filebeat_** Applicaton and system Log files being collected
+   - **_Metricbeat_** VMs Being Monitored
 - How to Use the Ansible Build
 
 ### Description of the Topology
