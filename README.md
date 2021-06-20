@@ -1,15 +1,14 @@
 # ELK-Stack-Project
-The diagram below is the **Cloud Security Architecture** to be implemented on Microsoft Azure to prepare a reliable, secure and available infrastructrure for running and ELK Stack (Elasticsearch+Logstash+Kibana).
+The diagram below is the **Cloud Security Architecture** to be implemented on Microsoft Azure to prepare a reliable, secure and available infrastructrure (Basically a software defined Data Center or SDDC) for running and ELK Stack (Elasticsearch+Logstash+Kibana). This is a precursor to successful SIEM for SoC operations a part of Enterprise Security Management or ESM.
 ![Network Diagram](Images/Cloud-Security-Architecture.PNG)
 
-The step by step tasks to achevie the Project Goal was done in following few steps
+The step by step tasks to achevie the Project Goal were done in following few steps
 
-1. provisioning ELK Stack container in **Azure** Public Cloud Leveraging the prepared Available, Reliable and Secure Cloud IT Infrastructure (done in previous class works) 
-2. Provisioning ELK Stack with Ansible (IaC - Infrastructure as Code)
-3. Provisioning Filebeat and Metricbeat for DVWA VMs a precursor to SIEM for SoC operations  
-
--- _Creating 4 Linux (Ubuntu20x) in Microsoft Azure_
-
+1. Creating a new Linux (Ubuntu 20x) VM to run ELK Stack dockerized container in the created Available, Reliable and Secure Cloud IT Infrastructure (done in the previous class works) in **Microsoft Azure Public Cloud**
+1. Provisioning ELK Stack container in **Microsoft Azure Public Cloud** in a different Azure Region and Availability Zone
+2. Provisioning ELK Stack with Ansible playbook (IaC - Infrastructure as Code)
+3. Provisioning Filebeat and Metricbeat with Ansible playbook in DVWA VMs
+4. Performing a self User Acceptance Test (UAT) as a Part of QA (Quality Assurance)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
