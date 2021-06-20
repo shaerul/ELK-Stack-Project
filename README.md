@@ -12,11 +12,13 @@ The step by step tasks to achevie the Project Goal were done in following few st
 
 The following **.yml** config files have been tested and used for **Ansible** to generate a live ELK Stack deployment on **Azure** from Jump Box VM. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the **_x.yml_** may be used to install only certain pieces of it, such as Filebeat.
 
-- 
-
-  - _TODO: Enter the playbook file._
+- [Provisioning DVWA Webserver Docker Container](Ansible/roles/install-dvwa-for-pentest-playbook.yml)
+- [Provisioning ELK Stack Docker Container](Ansible/roles/install-elk-stack-playbook.yml)
+- [Installing Filebeat collector agent](Ansible/roles/install-filebeat-collector-for-elk-playbook.yml)
+- [Installing Metricbeat collector agent](Ansible/roles/install-metricbeat-collector-for-elk-playbook.yml)
 
 This document contains the following details:
+
 - Description of the Topologu
 - Access Policies
 - ELK Configuration
