@@ -37,16 +37,15 @@ Practically in a Software Defined Data Center hosted in a public or private clou
 
 The above base diagram plotted as **Cloud Security Architecture** has covered all the above criteria. Most of the attributes have been inherited from the Azure Cloud iteself and the rest have been configured reasonablity as much as required by the Project Objective. Too much Security hardening might have restricted us from getting the intended result.
 
-| Name        | Function                | IP Address | Operating System |
-|------------ |-------------------------|------------|------------------|
-| Security    | - Network Security Group| 10.0.0.1   | Linux            |
-|             | - Dockerized Container  |            |                  |
-|             | - Reverse Proxy (Load Balancer)
-| Scalability | Inherited from Azure    |            |                  |
-| Reliablity  | Inherited from Azure    |            |                  |
-| Availability| Load Balancer           |            |                  |
-
-
+| Name        | Description                                    | 
+|------------ |:-----------------------------------------------|
+| Security    | - Network Security Group                       |
+|             | - Dockerized Container                         |
+|             | - Reverse Proxy (Load Balancer)                |
+| Scalability | Inherited from Azure                           |  
+| Reliablity  | Inherited from Azure                           | 
+| Availability| - Load Balancer                                |    
+|             | - Availability zones accross different region  |
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
