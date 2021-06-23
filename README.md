@@ -40,7 +40,7 @@ The above base diagram plotted as **Cloud Security Architecture** has covered al
 | Name        | Description                                    | 
 |------------ |:-----------------------------------------------|
 | Security    | - Network Security Group                       |
-|             | - Dockerized Container                         |
+|             | - Containerized Applicaton (Apache, MySQL)                         |
 |             | - Reverse Proxy (Load Balancer)                |
 | Scalability | Inherited from Azure                           |  
 | Reliablity  | Inherited from Azure                           | 
