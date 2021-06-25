@@ -59,7 +59,7 @@ Jump boxes are secure virtual machines that all administrators connect to before
 Load balancers are essentially reverse proxy servers, providing high availability, security and performance. The process of scaling out or adding more nodes is seamless and takes the shortest amount of time. Furthermore, it can distribute traffic among VMs in a weighted round robin manner. Also, load balancers can handle and offer fail-over stateful connections, such as paypal or credit/debit card transactions.
 
 **Monitoring**
-The Monitoring system allows seamleass monitoring of vulnerable VMs through continuously collecting the changed log files and system metrics. For this pupose an ELK (Elasticsearch+Logstash+Kibana) has been provisioned using Ansible in a seperate VM.
+The Monitoring system allows seamleass monitoring of vulnerable VMs through continuously collecting the changed log files and system metrics. For this pupose an ELK (Elasticsearch+Logstash+Kibana) Stack has been provisioned using Ansible from Jump Box in a seperate VM residing in a different region.
 
 
 
