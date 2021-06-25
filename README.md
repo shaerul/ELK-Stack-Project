@@ -92,7 +92,7 @@ Only the Jump-Box-DVWA and ELK Stack Machines can accept connections from the In
 
 **27.147.187.239** Public IP address prvided my Internet Service Provider.
 
-Machines within the network can only be accessed by _____.
+Machines within the network can only be accessed by **Jump-Box-DVWA**
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
