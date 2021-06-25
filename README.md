@@ -75,13 +75,14 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name                 | Function           | Private IP Address | Public IP Address | Operating System |
-|----------------------|--------------------|--------------------|-------------------|------------------|
-| Jump-Box-Provisioner | Gateway            | 10.0.0.4           | 168.62.21.152     | Ubuntu LTS 18.04 |
-| Web-1                | Application Server | 10.0.0.5           | N/A               | Ubuntu LTS 18.04 |
-| Web-2                | Application Server | 10.0.0.6           | N/A               | Ubuntu LTS 18.04 |
-| Web-3                | Application Server | 10.0.0.7           | N/A               | Ubuntu LTS 18.04 |
-| elk-stack            | ELK Stack          | 10.1.0.4           | 23.96.81.242      | Ubuntu LTS 18.04 |
+| Vitual Machine         | Function           | Private IP | Public IP   | Operating System |
+|------------------------|--------------------|------------|:-----------:|------------------|
+| Jump-Box-DVWA          | Jump Box           | 10.0.0.6   | 20.85.223.84| 20.04.1-Ubuntu   |
+| DVWA-VM1               | Application Server | 10.0.0.5   | N/A         | 20.04.1-Ubuntu   |
+| DVWA-VM2               | Application Server | 10.0.0.8   | N/A         | 20.04.1-Ubuntu   |
+| DVWA-VM3               | Application Server | 10.0.0.9   | N/A         | 20.04.1-Ubuntu   |
+| DVWA-VM4               | Application Server | 10.0.0.9   | N/A         | 20.04.1-Ubuntu   |
+| RedTeamTraining-ELK-VM | ELK Stack          | 10.1.0.4   | 23.96.81.242| 20.04.1-Ubuntu   |
 
 
 ### Access Policies
