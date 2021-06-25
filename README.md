@@ -72,8 +72,7 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 | Kibana        | Provides a user interface for querying the data and visualizing it|
 
 
-The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+The configuration details of each Virtual Machine:
 
 | Vitual Machine          | Function     | Private IP | Public IP    | Load Balancer IP | Operating System | Region      | Availibility Zone |
 |-------------------------|--------------|------------|:------------:|------------------|:-----------------|-------------|:-----------------:|
@@ -89,8 +88,9 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the Jump-Box-DVWA and ELK Stack Machines can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+
+**27.147.187.239** Public IP address prvided my Internet Service Provider.
 
 Machines within the network can only be accessed by _____.
 - _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
