@@ -61,6 +61,14 @@ Load balancers are essentially reverse proxy servers, providing high availabilit
 **Monitoring**
 The Monitoring system allows seamleass monitoring of vulnerable DVWAs through continuously collecting the changed log files and system metrics. For this pupose an ELK (Elasticsearch + Logstash + Kibana) Stack has been provisioned using Ansible from Jump Box in a seperate VM residing in a different region. ELK stack is the world’s most popular log management platform. Elastic's ELK Stack consists of three open-source products - Elasticsearch, Logstash, and Kibana - all developed, managed, and maintained by Elastic. Beats (e.g. filebeat, metricbeat) turned the stack into a four-legged project after its introduction and subsequent addition.
 
+| Component     | Description                                 |
+|---------------|---------------------------------------------|
+| Filebeat      |A "Lightweight shipper for forwarding and centralizing log data". It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files |
+| Metricbeat    | A "Lightweight Shipper for Metrics". Collect metrics from your systems and services. From CPU to memory, Redis to NGINX, and much more, It is a lightweight way to send system and service statistics |
+
+| Logstash      |          |
+| Elasticsearch |          |
+| Kibana        |          |
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
