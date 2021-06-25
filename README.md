@@ -66,7 +66,7 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 | Component     | Description                                 |
 |---------------|---------------------------------------------|
 | Filebeat      |A "Lightweight shipper for forwarding and centralizing log data". It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files|
-| Metricbeat    | A "Lightweight Shipper for Metrics". Collect metrics from your systems and services. From CPU to memory, Apache, MySql, and much more, It is a lightweight way to send system and service statistics|
+| Metricbeat    | A "Lightweight Shipper for Metrics". Collect metrics from your systems and services. From CPU to memory, Redis to NGINGX, and much more, It is a lightweight way to send system and service statistics|
 | Logstash      | Takes care of collected data from Beats and starts further processing|
 | Elasticsearch | Indexes and stores the proecessed data|
 | Kibana        | Provides a user interface for querying the data and visualizing it|
