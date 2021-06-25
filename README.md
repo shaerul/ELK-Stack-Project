@@ -40,12 +40,14 @@ The above base diagram plotted as **Cloud Security Architecture** has covered al
 | Name        | Description                                    | 
 |------------ |:-----------------------------------------------|
 | Security    | - Network Security Group                       |
-|             | - Containerized Applicaton (Apache, MySQL)                         |
+|             | - Access List                                  |
+|             | - Containerized Applicaton (Apache, MySQL)     |
 |             | - Reverse Proxy (Load Balancer)                |
+|             | - Jump Box                                     |
 | Scalability | Inherited from Azure                           |  
 | Reliablity  | Inherited from Azure                           | 
 | Availability| - Load Balancer                                |    
-|             | - Availability zones accross different region  |
+|             | - Availability Zones accross multiple Regions  |
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
