@@ -94,17 +94,17 @@ Only the **Jump-Box-DVWA** and **RedTeamTraining-ELK-VM1** Machines can accept c
 
 Machines within the network can only be accessed by **Jump-Box-DVWA** (PUblic IP Address 20.81.128.7)
 
-**RedTeamTraining-ELK-VM1** is accesible through SSH Port 22 only from **Jump-Box-DVWA**
+**RedTeamTraining-ELK-VM1** is accesible through virtual private network on SSH Port 22 only from **Jump-Box-DVWA** (Private IP Address 10.0.0.6)
 
 **RedTeamTraining-ELK-VM1** is accesible through custom HTTP Port 5601 **(Kibana)** only from my public IP Address **27.147.187.239**
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name                    | Publicly Accessible | Allowed IP Address | Port | Service |
+|-------------------------|---------------------|--------------------|:----:|:-------:|
+| Jump-Box-DVWA           | Yes                 | 27.147.187.239     | 22   | SSH     |
+| RedTeamTraining-ELK-VM1 | Yes                 | 27.147.187.239     | 5601 | HTTP    |
+|               |                     |                    |      |
 
 ### Elk Configuration
 
