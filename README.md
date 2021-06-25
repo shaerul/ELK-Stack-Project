@@ -75,12 +75,14 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name                 | Function           | Private IP Address | Public IP Address | Operating System |
+|----------------------|--------------------|--------------------|-------------------|------------------|
+| Jump-Box-Provisioner | Gateway            | 10.0.0.4           | 168.62.21.152     | Ubuntu LTS 18.04 |
+| Web-1                | Application Server | 10.0.0.5           | N/A               | Ubuntu LTS 18.04 |
+| Web-2                | Application Server | 10.0.0.6           | N/A               | Ubuntu LTS 18.04 |
+| Web-3                | Application Server | 10.0.0.7           | N/A               | Ubuntu LTS 18.04 |
+| elk-stack            | ELK Stack          | 10.1.0.4           | 23.96.81.242      | Ubuntu LTS 18.04 |
+
 
 ### Access Policies
 
