@@ -100,14 +100,14 @@ Machines within the network can only be accessed by **Jump-Box-DVWA** (PUblic IP
 
 A summary of the access policies in place can be found in the table below.
 
-| Name                    | Publicly Accessible | Allowed IP Address | Port | Service |
-|-------------------------|---------------------|--------------------|:----:|:-------:|
-| Jump-Box-DVWA           | Yes                 | 27.147.187.239     | 22   | SSH     |
-| RedTeamTraining-ELK-VM1 | Yes                 | 27.147.187.239     | 5601 | HTTP    |
-| DVWA-VM1                | No                  | 10.0.0.6           | all  | all     |
-| DVWA-VM2                | No                  | 10.0.0.6           | all  | all     | 
-| DVWA-VM3                | No                  | 10.0.0.6           | all  | all     | 
-| DVWA-VM4                | No                  | 10.0.0.6           | all  | all     | 
+| Name/Destination        | Publicly Accessible | Allowed Source Address | Port | Service |
+|-------------------------|---------------------|------------------------|:----:|:-------:|
+| Jump-Box-DVWA           | Yes                 | 27.147.187.239         | 22   | SSH     |
+| RedTeamTraining-ELK-VM1 | Yes                 | 27.147.187.239         | 5601 | HTTP    |
+| DVWA-VM1                | No                  | 10.0.0.6               | all  | all     |
+| DVWA-VM2                | No                  | 10.0.0.6               | all  | all     | 
+| DVWA-VM3                | No                  | 10.0.0.6               | all  | all     | 
+| DVWA-VM4                | No                  | 10.0.0.6               | all  | all     | 
 
 
 ### Elk Configuration
