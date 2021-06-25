@@ -76,7 +76,7 @@ The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Vitual Machine         | Function           | Private IP | Public IP    | Operating System | Region      |
-|------------------------|--------------------|------------|:-----------: |------------------|:-----------:|
+|------------------------|--------------------|------------|:-----------: |------------------|:------------|
 | Jump-Box-DVWA          | Jump Box           | 10.0.0.6   | 20.85.223.84 | 20.04.1-Ubuntu   | EAST US     |
 | DVWA-VM1               | Application Server | 10.0.0.4   | N/A          | 20.04.1-Ubuntu   | EAST US     |
 | DVWA-VM2               | Application Server | 10.0.0.5   | N/A          | 20.04.1-Ubuntu   | EAST US     |
