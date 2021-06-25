@@ -44,8 +44,9 @@ The above base diagram plotted as **Cloud Security Architecture** has covered al
 |             | - Containerized Applicaton (Apache, MySQL)     |
 |             | - Reverse Proxy (Load Balancer)                |
 |             | - Jump Box                                     |
-| Scalability | Inherited from Azure                           |  
-| Reliablity  | Inherited from Azure                           | 
+| Scalability | - Fastest Deployment with IaC (Ansible)                          
+|             | - Inherited from Azure                         |
+| Reliablity  | - Inherited from Azure                         | 
 | Availability| - Load Balancer                                |    
 |             | - Availability Zones accross multiple Regions  |
 
