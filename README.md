@@ -64,14 +64,11 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 | Component     | Description                                 |
 |---------------|---------------------------------------------|
 | Filebeat      |A "Lightweight shipper for forwarding and centralizing log data". It helps you keep the simple things simple by offering a lightweight way to forward and centralize logs and files|
-| Metricbeat    | A "Lightweight Shipper for Metrics". Collect metrics from your systems and services. From CPU to memory, Redis to NGINX, and much more, It is a lightweight way to send system and service statistics|
-| Logstash      | Takes care of collected data through Beats and starts further processing|
+| Metricbeat    | A "Lightweight Shipper for Metrics". Collect metrics from your systems and services. From CPU to memory, Apache, MySql, and much more, It is a lightweight way to send system and service statistics|
+| Logstash      | Takes care of collected data from Beats and starts further processing|
 | Elasticsearch | Indexes and stores the proecessed data|
 | Kibana        | Provides a user interface for querying the data and visualizing it|
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
