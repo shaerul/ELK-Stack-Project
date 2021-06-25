@@ -50,7 +50,13 @@ The above base diagram plotted as **Cloud Security Architecture** has covered al
 | Availability| - Load Balancer                                |    
 |             | - Availability Zones accross multiple Regions  |
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The ultimate objective of this Project lab setup is to expose a load-balanced and monitored instance of DVWA the D*mn Vulnerable Web Application.
+
+**Jump Box**
+Jump boxes are secure virtual machines that all administrators connect to before launching any administrative task or as a point of connection when connecting to other servers or untrusted environments.
+
+**Load Balancer**
+Load balancers are essentially reverse proxy servers, providing high availability, security and performance. The process of scaling out or adding more nodes is seamless and takes the shortest amount of time. Furthermore, it can distribute traffic among VMs in a weighted round robin manner. Also, load balancers can handle stateful connections, such as financial transactions.
 
 Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
 - _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
