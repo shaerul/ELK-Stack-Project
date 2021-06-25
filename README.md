@@ -58,6 +58,11 @@ Jump boxes are secure virtual machines that all administrators connect to before
 **Load Balancer**
 Load balancers are essentially reverse proxy servers, providing high availability, security and performance. The process of scaling out or adding more nodes is seamless and takes the shortest amount of time. Furthermore, it can distribute traffic among VMs in a weighted round robin manner. Also, load balancers can handle and offer fail-over stateful connections, such as paypal or credit/debit card transactions.
 
+**Monitoring**
+The Monitoring system allows seamleass monitoring of vulnerable VMs through continuously collecting the changed log files and system metrics. For this pupose an ELK (Elasticsearch+Logstash+Kibana) has been provisioned using Ansible in a seperate VM.
+
+
+
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
 - _TODO: What does Filebeat watch for?_
 - _TODO: What does Metricbeat record?_
