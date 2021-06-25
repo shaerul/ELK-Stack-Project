@@ -61,7 +61,8 @@ Load balancers are essentially reverse proxy servers, providing high availabilit
 **Monitoring**
 The Monitoring system allows seamleass monitoring of vulnerable DVWAs through continuously collecting the changed log files and system metrics. For this pupose an ELK (Elasticsearch + Logstash + Kibana) Stack has been provisioned using Ansible from Jump Box in a seperate VM residing in a different region. ELK stack is the world’s most popular log management platform. Elastic's ELK Stack consists of three open-source products - Elasticsearch, Logstash, and Kibana - all developed, managed, and maintained by Elastic. Beats (e.g. filebeat, metricbeat) turned the stack into a four-legged project after its introduction and subsequent addition.
 
-![ELK Stack Layer](Images/ElasticStack-Elasticsearch5-1.png)(Images/Cloud-Security-Architecture.PNG)
+![ELK WorkFlow](Images/ElasticStack-Elasticsearch5-1.png)
+![Stack Layer](Images/Cloud-Security-Architecture.PNG)
 
 
 | Component     | Description                                 |
