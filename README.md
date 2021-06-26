@@ -111,13 +111,13 @@ A summary of the access policies in place can be found in the table below.
 | DVWA-VM4                | No                  | 10.0.0.6               | 22   | SSH     |
 | DVWA-VM-LB1             | Yes                 | 27.147.187.239         | 80   | HTTP    | 
 
-**Note:** DVWA-VM-LB1 is the Load Balancer that distributes the incoming traffic at HTTP Port 80 equally among four DVWA VMs' Port 80. 
+**Note:** **DVWA-VM-LB1** is the Load Balancer that distributes the incoming traffic at HTTP Port 80 equally among four DVWA VMs' Port 80. 
 
 ### Elk Configuration
 
 Ansible has been used here, which is basically an open-source software tool for provisioning, configuration management, and application-deployment enabling infrastructure as code **(IaC)**. Although it is very simple to use, this tool is capable of automating multi-tier IT environments that are quite complex in nature.
 
-Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box provisioner VM** and by running **ansible-playbook** very quickly and seamlessly.
+Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running **ansible-playbook** very quickly and seamlessly.
 
 The playbook implements the following tasks:
 - Configure maximum mapped memory with `sysctl` module
