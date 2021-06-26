@@ -39,7 +39,7 @@
     - name: download and launch dockerized ELK Stack container
       docker_container:
         name: elk
-        image: sebp/elk
+        image: sebp/elk:761
         state: started
         restart_policy: always
         published_ports:
