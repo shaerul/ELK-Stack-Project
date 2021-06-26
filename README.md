@@ -81,7 +81,7 @@ The configuration details of each Virtual Machine:
 | DVWA-VM2                | LAMP Server  | 10.0.0.5   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 1                 |
 | DVWA-VM3                | LAMP Server  | 10.0.0.8   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 2                 |
 | DVWA-VM4                | LAMP Server  | 10.0.0.9   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 3                 |
-| RedTeamTraining-ELK-VM1 | ELK Stack    | 10.1.0.5   | 20.81.128.7 |                   | 20.04.1-Ubuntu        | EAST US 2   | 1                 |
+| RedTeamTraining-ELK-VM1 | ELK Stack    | 10.1.0.4   | 20.81.128.7 |                   | 20.04.1-Ubuntu        | EAST US 2   | 1                 |
 
 
 ### Access Policies
@@ -116,7 +116,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible has been used here, which is basically an open-source software tool for provisioning, configuration management, and application-deployment enabling infrastructure as code **(IaC)**. Although it is very simple to use, this tool is capable of automating multi-tier IT environments that are quite complex in nature.
 
-Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running **ansible-playbook** very quickly and seamlessly.
+Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running `ansible-playbook` very quickly and seamlessly.
 
 The playbook implements the following tasks:
 
@@ -133,9 +133,13 @@ The following screenshot displays the result of running `docker ps -a` after suc
 
 #### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- Web-1: 10.0.0.5
-- Web-2: 10.0.0.6
-- Web-3: 10.0.0.7
+
+| DVWA Virtual Machine    | Private IP Address | Port | Service |
+|-------------------------|--------------------|------|:-------:|
+| DVWA-VM1                | 10.0.0.4           | 22   | SSH     |
+| DVWA-VM2                | 10.0.0.5           | 22   | SSH     | 
+| DVWA-VM3                | 10.0.0.8           | 22   | SSH     | 
+| DVWA-VM4                | 10.0.0.9           | 22   | SSH     |
 
 We have installed the following Beats on these machines:
 - Filebeat
