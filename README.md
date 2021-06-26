@@ -148,6 +148,18 @@ Among 7 members (Filebeat, Metricbeat, Packetbeat, Winlogbeat, Auditbeat and Hea
 
 **Note:** **Winlogbeat** is a Lightweight shipper specially designed for Windows not installed here as we don't have any Windows VM.
 
+**Filebeat Example:** Live Screenshots from deployed ELK Stac's Kibana
+
+![filebeat screenshots1](Images/filebeat-dashboard1.PNG)
+
+![filebeat screenshots2](Images/filebeat-dashboard2.PNG)
+
+**Metricbeat Example:** Live Screenshots from deployed ELK Stac's Kibana
+
+![Metricbeat screenshots1](Images/filebeat-dashboard1.PNG)
+
+![Metricbeat screenshots2](Images/filebeat-dashboard2.PNG)
+
 
 
 ### Using the ELK Stack Playbook
