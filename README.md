@@ -156,9 +156,9 @@ Among 7 members (Filebeat, Metricbeat, Packetbeat, Winlogbeat, Auditbeat and Hea
 
 **Metricbeat Example:** Live Screenshots from deployed ELK Stac's Kibana
 
-![Metricbeat screenshots1](Images/filebeat-dashboard1.PNG)
+![Metricbeat screenshots1](Images/metricbeat-hosts1.PNG)
 
-![Metricbeat screenshots2](Images/filebeat-dashboard2.PNG)
+![Metricbeat screenshots2](Images/metricbeat-hosts2.PNG)
 
 
 
