@@ -193,6 +193,11 @@ SSH into the control node and follow the steps below:
 
 ![verifying elk installation](Images/checking-kibana-using-curl.PNG)
 
+- Adding new Inbound rule to the security group of **Microsoft Azure Cloud** to enable access from **Home IP Address 27.147.187.239**
+
+![inbound_rule_to_access_elk_server](Images/adding-inbound-rule-for-elk-from-my-home-ip.PNG)
+
+
 ### Using the Metricbeat and Filebeat Playbooks
 
 #### Filebeat 
