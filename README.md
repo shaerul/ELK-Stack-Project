@@ -129,17 +129,17 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
 
-![Screenshot](Images/output-docker-ps.png)
+![Screenshot](Images/elk-stack-ps-a.PNG)
 
 #### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-| DVWA Virtual Machine    | Private IP Address | Port | Service |
-|-------------------------|--------------------|------|:-------:|
-| DVWA-VM1                | 10.0.0.4           | 22   | SSH     |
-| DVWA-VM2                | 10.0.0.5           | 22   | SSH     | 
-| DVWA-VM3                | 10.0.0.8           | 22   | SSH     | 
-| DVWA-VM4                | 10.0.0.9           | 22   | SSH     |
+| DVWA Virtual Machine    | Private IP Address | 
+|-------------------------|--------------------|
+| DVWA-VM1                | 10.0.0.4           |
+| DVWA-VM2                | 10.0.0.5           | 
+| DVWA-VM3                | 10.0.0.8           | 
+| DVWA-VM4                | 10.0.0.9           |
 
 We have installed the following Beats on these machines:
 - Filebeat
