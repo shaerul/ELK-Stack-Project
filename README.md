@@ -114,40 +114,104 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous 
+because it allows a consistent and predictable configuration. In addition to consistency, with an automated setup, the ELK stack
+can be created and configured very quickly.  
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- Configure maximum mapped memory with `sysctl` module
+- Install `docker.io` and `python3-pip` packages with `apt` module
+- Install docker `python` package with `pip`
+- Enable systemd docker service
+- Run ELK docker container
 
-The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
 
-### Target Machines & Beats
+![Screenshot](Images/output-docker-ps.png)
+
+#### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+- Web-1: 10.0.0.5
+- Web-2: 10.0.0.6
+- Web-3: 10.0.0.7
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+- Filebeat
+- Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+- Filebeat parses and forwards system logs from the Web VMs to the ELK Stack in an easy to read format.
+- Metricbeat reports system and service statistics about the Web VMs to the ELK stack VM.
 
-### Using the Playbook
+### Using the ELK Stack Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Copy the `elk-stack-playbook.yml` playbook file to `/etc/ansible/roles/`
+    directory inside the ansible container.
+    - `$ sudo docker cp elk-stack-playbook.yml <container.name>:/etc/ansible/roles/elk-stack-playbook.yml`
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
+- **Optional:** Copy the whole directory for the Metricbeat and Filebeat
+        playbooks and configuration files.
+    - `$ sudo docker cp Ansible/* <container.name>:/etc/ansible`
 
+- Attach to the ansible docker with `$ sudo docker attach <container.name>`
+
+- Update the [/etc/ansible/hosts](Ansible/hosts) file to include the ELK stack VM IP address.
+  - Append `ansible_python_interpreter=/usr/bin/python3` to ensure that the
+      correct version of python is used.
+
+    - Example configuration of `/etc/ansible/hosts`
+```bash
+[elk]
+<internal.ip>      ansible_python_interpreter=/usr/bin/python3
+<external.ip>      ansible_python_interpreter=/usr/bin/python3
+alpha.example.org  ansible_python_interpreter=/usr/bin/python3
+```
+- Run the playbook, and navigate to `http://[your.elk.ip]:5601/app/kibana.` to check that the installation worked as expected.
+
+    - `$ ansible-playbook /etc/ansible/roles/elk-stack-playbook.yml`
+
+![ELK Webpage Screenshot](Images/webpage-kibana.png)
+
+
+### Using the Metricbeat and Filebeat Playbooks
+
+#### Filebeat 
+
+- Edit [/etc/ansible/files/filebeat-config.yml](Ansible/files/filebeat-config.yml) in the ansible container on the control node to include the ELK Stack IP address. You should also change the default login credentials.
+
+```yml
+output.elasticsearch:
+hosts: ["<elk.ip.addr>:9200"]
+username: "elastic"
+password: "changeme"
+```
+```yml
+setup.kibana:
+host: "<elk.ip.addr>:5601"
+```
+
+- Then run the playbook 
+  - `$ ansible-playbook /etc/ansible/roles/filebeat-playbook.yml`
+
+
+#### Metricbeat
+
+- Edit [/etc/ansible/files/metricbeat-config.yml](Ansible/files/metricbeat-config.yml) in the ansible on the control node to include the ELK Stack IP address. You should also change the default login credentials.
+
+```yml
+output.elasticsearch:
+hosts: ["<elk.ip.addr>:9200"]
+username: "elastic"
+password: "changeme"
+```
+```yml
+setup.kibana:
+host: "<elk.ip.addr>:5601"
+```
+		
+- Then run the playbook 
+  - `$ ansible-playbook /etc/ansible/roles/metricbeat-playbook.yml`
