@@ -124,8 +124,8 @@ The playbook implements the following tasks:
 - Install `docker.io` package with *_apt_* module
 - Install `python3-pip` package with *_apt_* module
 - Install **Docker SDK** for **Python** using `pip`
-- Download and launch a dockerized ELK Stack container
-- Enable service docker on boot (while container will stop and then aumatically start witt container)
+- Download and launch a **ELK Stack** container with `docker-container`
+- Enable service **docker** on boot with `systemd` (while container will stop and then aumatically start witt container)
 
 The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
 
