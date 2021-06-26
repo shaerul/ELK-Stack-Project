@@ -208,37 +208,39 @@ SSH into the control node and follow the steps below:
 
 #### Filebeat 
 
-- Edit [/etc/ansible/files/filebeat-config.yml](Ansible/files/filebeat-config.yml) in the ansible container on the control node to include the ELK Stack IP address. You should also change the default login credentials.
+- Edit [/etc/ansible/files/filebeat-config.yml](Ansible/files/filebeat-config.yml) in the Jump Box Ansible container on the control node to include the ELK Stack IP address.
+- **10.1.0.4** is the private IP Address of ELK Stack Server. 
 
 ```yml
 output.elasticsearch:
-hosts: ["<elk.ip.addr>:9200"]
+hosts: ["10.1.0.4:9200"]
 username: "elastic"
 password: "changeme"
 ```
 ```yml
 setup.kibana:
-host: "<elk.ip.addr>:5601"
+host: "10.1.0.4:5601"
 ```
 
 - Then run the playbook 
-  - `$ ansible-playbook /etc/ansible/roles/filebeat-playbook.yml`
+  - `$ ansible-playbook /etc/ansible/roles/install-filebeat-collector-for-elk-playbook.yml`
 
 
 #### Metricbeat
 
-- Edit [/etc/ansible/files/metricbeat-config.yml](Ansible/files/metricbeat-config.yml) in the ansible on the control node to include the ELK Stack IP address. You should also change the default login credentials.
+- Edit [/etc/ansible/files/metricbeat-config.yml](Ansible/files/metricbeat-config.yml) in the ansible on the control node to include the ELK Stack IP address.
+- **10.1.0.4** is the private IP Address of ELK Stack Server.
 
 ```yml
 output.elasticsearch:
-hosts: ["<elk.ip.addr>:9200"]
+hosts: ["10.1.0.4:9200"]
 username: "elastic"
 password: "changeme"
 ```
 ```yml
 setup.kibana:
-host: "<elk.ip.addr>:5601"
+host: "10.1.0.4:5601"
 ```
 		
 - Then run the playbook 
-  - `$ ansible-playbook /etc/ansible/roles/metricbeat-playbook.yml`
+  - `$ ansible-playbook /etc/ansible/roles/install-metricbeat-collector-for-elk-playbook.yml`
