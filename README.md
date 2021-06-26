@@ -167,13 +167,13 @@ In order to use the playbook, you will need to have an Ansible control node alre
 
 SSH into the control node and follow the steps below:
 
-- Copy the `elk-stack-playbook.yml` playbook file to `/etc/ansible/roles/`
-    directory inside the ansible container.
-    - `$ sudo docker cp elk-stack-playbook.yml <container.name>:/etc/ansible/roles/elk-stack-playbook.yml`
+- Copy the `install-elk-stack-playbook.yml` playbook file to `/etc/ansible/roles/`
 
-- **Optional:** Copy the whole directory for the Metricbeat and Filebeat
-        playbooks and configuration files.
-    - `$ sudo docker cp Ansible/* <container.name>:/etc/ansible`
+![copy inside container](Images/copy-command-for-ymls-to-roles.PNG)
+ 
+- **Alternatively** Copy the `install-elk-stack-playbook.yml` playbook file from outside container to `eager_yalow:/etc/ansible/roles/`
+      
+![copy from_outside container](Images/copy-command-for-ymls-to-roles-from-host.PNG)
 
 - Attach to the ansible docker with `$ sudo docker attach <container.name>`
 
@@ -193,7 +193,6 @@ alpha.example.org  ansible_python_interpreter=/usr/bin/python3
     - `$ ansible-playbook /etc/ansible/roles/elk-stack-playbook.yml`
 
 ![ELK Webpage Screenshot](Images/webpage-kibana.png)
-
 
 ### Using the Metricbeat and Filebeat Playbooks
 
