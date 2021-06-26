@@ -115,9 +115,10 @@ A summary of the access policies in place can be found in the table below.
 
 ### Elk Configuration
 
-Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous 
-because it allows a consistent and predictable configuration. In addition to consistency, with an automated setup, the ELK stack
-can be created and configured very quickly.  
+Ansible has been used here, which is basically an open-source software tool for provisioning, configuration management, and application-deployment enabling infrastructure as code **(IaC)**. Although it is very simple to use, this tool is capable of automating multi-tier IT environments that are quite complex in nature.
+
+Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating a .yml configuration file at Jump Box provisioner and by running ansible-playbook very quickly and seamlessly.
+
 
 The playbook implements the following tasks:
 - Configure maximum mapped memory with `sysctl` module
