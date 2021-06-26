@@ -181,11 +181,17 @@ SSH into the control node and follow the steps below:
 
 ![hosts update](Images/hosts-update.PNG)
 
-- Run the playbook, and navigate to `http://[your.elk.ip]:5601/app/kibana.` to check that the installation worked as expected.
+- Run the playbook
 
-    - `$ ansible-playbook /etc/ansible/roles/elk-stack-playbook.yml`
+    - `$ ansible-playbook` [`install-elk-stack-playbook.yml`](Ansible/roles/install-elk-stack-playbook.yml)
 
-![ELK Webpage Screenshot](Images/webpage-kibana.png)
+![successful elk installation](Images/installing-elk-successfully.PNG)
+
+- Check if the ELK Stack is runnining properly from command line
+
+    - `$ curl localhost:5601/app/kibana`
+
+![verifying elk installation](Images/checking-kibana-using-curl.PNG)
 
 ### Using the Metricbeat and Filebeat Playbooks
 
