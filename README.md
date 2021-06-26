@@ -116,7 +116,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible has been used here, which is basically an open-source software tool for provisioning, configuration management, and application-deployment enabling infrastructure as code **(IaC)**. Although it is very simple to use, this tool is capable of automating multi-tier IT environments that are quite complex in nature.
 
-Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running **ansible-playbook** very quickly and seamlessly.
+Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running **`ansible-playbook`** very quickly and seamlessly.
 
 The playbook implements the following tasks:
 
@@ -127,19 +127,19 @@ The playbook implements the following tasks:
 - Download and launch a **ELK Stack** container with `docker-container`
 - Enable service **docker** on boot with `systemd` (automatically start after system reboot and/or container restart)
 
-The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
+The following screenshot displays the result of running `sudo docker ps -a` after successfully configuring the ELK instance.
 
 ![Screenshot](Images/output-docker-ps.png)
 
 #### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
-| Virtual Machines        | Private IP Address | Port | Service |
+| DVWA Virtual Machine    | Private IP Address | Port | Service |
 |-------------------------|--------------------|------|:-------:|
-| DVWA-VM1                | 10.0.0.6           | 22   | SSH     |
-| DVWA-VM2                | 10.0.0.6           | 22   | SSH     | 
-| DVWA-VM3                | 10.0.0.6           | 22   | SSH     | 
-| DVWA-VM4                | 10.0.0.6           | 22   | SSH     |
+| DVWA-VM1                | 10.0.0.4           | 22   | SSH     |
+| DVWA-VM2                | 10.0.0.5           | 22   | SSH     | 
+| DVWA-VM3                | 10.0.0.8           | 22   | SSH     | 
+| DVWA-VM4                | 10.0.0.9           | 22   | SSH     |
 
 We have installed the following Beats on these machines:
 - Filebeat
