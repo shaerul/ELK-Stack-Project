@@ -171,7 +171,7 @@ SSH into the control node and follow the steps below:
 
 ![copy inside container](Images/copy-command-for-ymls-to-roles.PNG)
  
-- **Alternatively** Copy the `install-elk-stack-playbook.yml` playbook file from outside container to `eager_yalow:/etc/ansible/roles/`
+- **Alternatively** Copy the [install-elk-stack-playbook.yml](Ansible/roles/install-elk-stack-playbook.yml) playbook file from outside container to `eager_yalow:/etc/ansible/roles/`
       
 ![copy from_outside container](Images/copy-command-for-ymls-to-roles-from-host.PNG)
 
