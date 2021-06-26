@@ -197,6 +197,10 @@ SSH into the control node and follow the steps below:
 
 ![inbound_rule_to_access_elk_server](Images/adding-inbound-rule-for-elk-from-my-home-ip.PNG)
 
+- Finally accessing ELK Stack Server for the first time from **Home IP Address 27.147.187.239**
+
+![accessed_elk_server](Images/Images/accessing-kibana-for-the-first-time.PNG)
+
 
 ### Using the Metricbeat and Filebeat Playbooks
 
