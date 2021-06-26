@@ -204,7 +204,7 @@ SSH into the control node and follow the steps below:
 ![accessed_elk_server](Images/accessing-kibana-for-the-first-time.PNG)
 
 
-### Installing Metricbeat and Filebeat Playbooks
+### Installing Metricbeat and Filebeat using ansible-playbook and .yml config files
 
 #### Filebeat 
 
