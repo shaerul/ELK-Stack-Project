@@ -108,7 +108,6 @@ A summary of the access policies in place can be found in the table below.
 | DVWA-VM2                | No                  | 10.0.0.6               | 22   | SSH     | 
 | DVWA-VM3                | No                  | 10.0.0.6               | 22   | SSH     | 
 | DVWA-VM4                | No                  | 10.0.0.6               | 22   | SSH     |
-| DVWA-VM4                | No                  | 10.0.0.6               | 22   | SSH     |
 | DVWA-VM-LB1             | Yes                 | 27.147.187.239         | 80   | HTTP    | 
 
 **Note:** **DVWA-VM-LB1** is the Load Balancer that distributes the incoming traffic at HTTP Port 80 equally among four DVWA VMs' Port 80. 
