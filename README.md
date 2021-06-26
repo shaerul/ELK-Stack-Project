@@ -123,16 +123,9 @@ The playbook implements the following tasks:
 - Configure Maximum mapped Memory with `sysctl`
 - Install `docker.io` package with *_apt_* module
 - Install `python3-pip` package with *_apt_* module
-- Install Docker SDK for Python
-- Download and launch a docker ELK Stack container
-- Enable service docker on boot (while container will stop and then start)
-
-- Configure maximum mapped memory with `sysctl` module
-- Install `docker.io` and `python3-pip` packages with `apt` module
-- Install docker `python` package with `pip`
-- Enable systemd docker service
-- Run ELK docker container
-
+- Install **Docker SDK** for **Python** using `pip`
+- Download and launch a dockerized ELK Stack container
+- Enable service docker on boot (while container will stop and then aumatically start witt container)
 
 The following screenshot displays the result of running `docker ps -a` after successfully configuring the ELK instance.
 
