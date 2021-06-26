@@ -183,7 +183,7 @@ SSH into the control node and follow the steps below:
 
 - Run the playbook
 
-    - `$ ansible-playbook' [/etc/ansible/roles/elk-stack-playbook.yml](Ansible/roles/install-elk-stack-playbook.yml)
+    - `$ ansible-playbook` [/etc/ansible/roles/elk-stack-playbook.yml](Ansible/roles/install-elk-stack-playbook.yml)
 
 ![successful elk installation](Images/installing-elk-successfully.PNG)
 
