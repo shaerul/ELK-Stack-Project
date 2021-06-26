@@ -179,7 +179,7 @@ SSH into the control node and follow the steps below:
   - Append `ansible_python_interpreter=/usr/bin/python3` to ensure that the
       correct version of python is used.
 
-![copy from_outside container](Images/copy-command-for-ymls-to-roles-from-host.PNG)
+![hosts update](Images/hosts-update.PNG)
 
 - Run the playbook, and navigate to `http://[your.elk.ip]:5601/app/kibana.` to check that the installation worked as expected.
 
