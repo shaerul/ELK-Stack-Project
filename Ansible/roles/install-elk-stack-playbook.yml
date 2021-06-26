@@ -4,7 +4,7 @@
   become: true
   tasks:
 
-    - name: Configure Memory
+    - name: configure memory
       sysctl:
         name: vm.max_map_count
         value: '262144'
@@ -12,25 +12,25 @@
         state: present
         reload: yes
     
-    - name: Install docker.io
+    - name: install docker
       apt:
         update_cache: yes
         force_apt_get: yes
         name: docker.io
         state: present
 
-    - name: Install python3-pip
+    - name: install python dependencies
       apt:
         force_apt_get: yes
         name: python3-pip
         state: present
 
-    - name: Install Docker module
+    - name: install docker SDK for Python
       pip:
         name: docker
         state: present
     
-    - name: download and launch a docker elk container
+    - name: download and launch dockerized ELK container
       docker_container:
         name: elk
         image: sebp/elk
