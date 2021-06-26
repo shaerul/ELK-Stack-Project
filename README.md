@@ -187,6 +187,12 @@ SSH into the control node and follow the steps below:
 
 ![successful elk installation](Images/installing-elk-successfully.PNG)
 
+- Check if the ELK Stack is runnining properly from command line
+
+    - `$ curl localhost:5601/app/kibana`
+
+![verifying elk installation](Images/checking-kibana-using-curl.PNG)
+
 ### Using the Metricbeat and Filebeat Playbooks
 
 #### Filebeat 
