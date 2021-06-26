@@ -131,7 +131,7 @@ The following screenshot displays the result of running `docker ps -a` after suc
 
 ![Screenshot](Images/elk-stack-ps-a.PNG)
 
-#### Target Machines & Beats
+### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 
 | DVWA Virtual Machine    | Private IP Address | 
