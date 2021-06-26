@@ -175,19 +175,12 @@ SSH into the control node and follow the steps below:
       
 ![copy from_outside container](Images/copy-command-for-ymls-to-roles-from-host.PNG)
 
-- Attach to the ansible docker with `$ sudo docker attach <container.name>`
-
-- Update the [/etc/ansible/hosts](Ansible/hosts) file to include the ELK stack VM IP address.
+- Update the [/etc/ansible/hosts](Ansible/hosts) file to include the ELK stack VM Private IP address.
   - Append `ansible_python_interpreter=/usr/bin/python3` to ensure that the
       correct version of python is used.
 
-    - Example configuration of `/etc/ansible/hosts`
-```bash
-[elk]
-<internal.ip>      ansible_python_interpreter=/usr/bin/python3
-<external.ip>      ansible_python_interpreter=/usr/bin/python3
-alpha.example.org  ansible_python_interpreter=/usr/bin/python3
-```
+![copy from_outside container](Images/copy-command-for-ymls-to-roles-from-host.PNG)
+
 - Run the playbook, and navigate to `http://[your.elk.ip]:5601/app/kibana.` to check that the installation worked as expected.
 
     - `$ ansible-playbook /etc/ansible/roles/elk-stack-playbook.yml`
