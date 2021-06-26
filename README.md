@@ -199,7 +199,7 @@ SSH into the control node and follow the steps below:
 
 - Finally accessing ELK Stack Server for the first time from **Home IP Address 27.147.187.239**
 
-![accessed_elk_server](Images/Images/accessing-kibana-for-the-first-time.PNG)
+![accessed_elk_server](Images/accessing-kibana-for-the-first-time.PNG)
 
 
 ### Using the Metricbeat and Filebeat Playbooks
