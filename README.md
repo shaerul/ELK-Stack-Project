@@ -120,12 +120,12 @@ Leveraging Ansible's powerful capability we configured and deployed ELK Stack Do
 
 The playbook implements the following tasks:
 
-- Configure Maximum mapped Memory with 'sysctl'
-- Install docker.io
-- Install python3-pip with **apt** module
-- Install Docker module
-- download and launch a docker elk container
-- Enable service docker on boot
+- Configure Maximum mapped Memory with `sysctl`
+- Install `docker.io`
+- Install `python3-pip` with *_apt_* module
+- Install *_docker_* module
+- Download and launch a docker ELK Stack container
+- Enable service docker on boot (while container will stop and then start)
 
 - Configure maximum mapped memory with `sysctl` module
 - Install `docker.io` and `python3-pip` packages with `apt` module
