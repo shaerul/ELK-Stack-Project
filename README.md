@@ -223,7 +223,7 @@ host: "10.1.0.4:5601"
 ```
 
 - Then run the playbook 
-  - `$ ansible-playbook /etc/ansible/roles/install-filebeat-collector-for-elk-playbook.yml`
+  - `$ ansible-playbook` [`/etc/ansible/roles/install-filebeat-collector-for-elk-playbook.yml`](Ansible/roles/install-filebeat-collector-for-elk-playbook.yml)
 
 
 #### Metricbeat
@@ -243,4 +243,4 @@ host: "10.1.0.4:5601"
 ```
 		
 - Then run the playbook 
-  - `$ ansible-playbook /etc/ansible/roles/install-metricbeat-collector-for-elk-playbook.yml`
+  - `$ ansible-playbook` [`/etc/ansible/roles/install-metricbeat-collector-for-elk-playbook.yml`](Ansible/roles/install-metricbeat-collector-for-elk-playbook.yml)
