@@ -119,6 +119,14 @@ Ansible has been used here, which is basically an open-source software tool for 
 Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box DVWA VM** and by running **ansible-playbook** very quickly and seamlessly.
 
 The playbook implements the following tasks:
+
+- Configure Maximum mapped Memory with `sysctl`
+- Install `docker.io`
+- Install `python3-pip` with *_apt_* module
+- Install *_docker_* module
+- Download and launch a docker ELK Stack container
+- Enable service docker on boot (while container will stop and then start)
+
 - Configure maximum mapped memory with `sysctl` module
 - Install `docker.io` and `python3-pip` packages with `apt` module
 - Install docker `python` package with `pip`
