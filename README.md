@@ -117,8 +117,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible has been used here, which is basically an open-source software tool for provisioning, configuration management, and application-deployment enabling infrastructure as code **(IaC)**. Although it is very simple to use, this tool is capable of automating multi-tier IT environments that are quite complex in nature.
 
-Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating a .yml configuration file at Jump Box provisioner and by running ansible-playbook very quickly and seamlessly.
-
+Leveraging Ansible's powerful capability we configured and deployed ELK Stack Docker Container just by creating **.yml** configuration files at **Jump Box provisioner VM** and by running **ansible-playbook** very quickly and seamlessly.
 
 The playbook implements the following tasks:
 - Configure maximum mapped memory with `sysctl` module
