@@ -4,6 +4,8 @@
   become: true
   tasks:
 
+##### Install Docker
+
     - name: configure memory
       sysctl:
         name: vm.max_map_count
@@ -19,6 +21,8 @@
         name: docker.io
         state: present
 
+##### Setup Docker
+
     - name: install python dependencies
       apt:
         force_apt_get: yes
@@ -29,8 +33,10 @@
       pip:
         name: docker
         state: present
-    
-    - name: download and launch dockerized ELK container
+
+##### Install ELK Stack
+
+    - name: download and launch dockerized ELK Stack container
       docker_container:
         name: elk
         image: sebp/elk
@@ -41,7 +47,9 @@
           -  "9200:9200"
           -  "5044:5044"
 
-    - name: Enable service docker on boot
+##### Automatically stack start after system reboot and/or container restart
+
+    - name: enable service docker on boot
       systemd:
         name: docker
         daemon_reload: yes
