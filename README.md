@@ -141,13 +141,12 @@ This ELK server is configured to monitor the following machines:
 | DVWA-VM3                | 10.0.0.8           | 
 | DVWA-VM4                | 10.0.0.9           |
 
-We have installed the following Beats on these machines:
-- Filebeat
-- Metricbeat
+Among 7 members (Filebeat, Metricbeat, Packetbeat, Winlogbeat, Auditbeat and Heartbeat) of Beat Family used at end-points for collective varous data we have installed here two members for our Linux Operating System based VMs
 
-These Beats allow us to collect the following information from each machine:
-- Filebeat parses and forwards system logs from the Web VMs to the ELK Stack in an easy to read format.
-- Metricbeat reports system and service statistics about the Web VMs to the ELK stack VM.
+- **Filebeat**: Lightweight shipper for logs and other data. Filebeat parses and forwards data from the Web VMs in an easy-to-read format to the ELK Stack VM.
+- **Metricbeat**: Lightweight shipper for metric data. Metricbeat reports system statistics and performance metrics about the Web VMs to the ELK stack VM.
+
+**Note:** Winlogbeat is a Lightweight shipper specially designed for Windows event log shipper not installed as we don't have any Windows VM.
 
 ### Using the ELK Stack Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
