@@ -74,13 +74,13 @@ The Monitoring system allows seamleass monitoring of vulnerable DVWAs through co
 
 The configuration details of each Virtual Machine:
 
-| Vitual Machine          | Function     | Private IP | Public IP    | Load Balancer IP:Port | Operating System | Region      | Availibility Zone |
+| Vitual Machine          | Function     | Private IP | Public IP    | Load Balancer IP | Operating System      | Region      | Availibility Zone |
 |-------------------------|--------------|------------|:------------:|------------------|:----------------------|-------------|:-----------------:|
 | Jump-Box-DVWA           | Jump Box     | 10.0.0.6   | 20.85.223.84 |                  | 20.04.1-Ubuntu        | EAST US     | None              |
-| DVWA-VM1                | LAMP Server  | 10.0.0.4   | N/A          | 20.62.236.238:80 | 20.04.1-Ubuntu        | EAST US     | 1                 |
-| DVWA-VM2                | LAMP Server  | 10.0.0.5   | N/A          | 20.62.236.238:80 | 20.04.1-Ubuntu        | EAST US     | 1                 |
-| DVWA-VM3                | LAMP Server  | 10.0.0.8   | N/A          | 20.62.236.238:80 | 20.04.1-Ubuntu        | EAST US     | 2                 |
-| DVWA-VM4                | LAMP Server  | 10.0.0.9   | N/A          | 20.62.236.238:80 | 20.04.1-Ubuntu        | EAST US     | 3                 |
+| DVWA-VM1                | LAMP Server  | 10.0.0.4   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 1                 |
+| DVWA-VM2                | LAMP Server  | 10.0.0.5   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 1                 |
+| DVWA-VM3                | LAMP Server  | 10.0.0.8   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 2                 |
+| DVWA-VM4                | LAMP Server  | 10.0.0.9   | N/A          | 20.62.236.238    | 20.04.1-Ubuntu        | EAST US     | 3                 |
 | RedTeamTraining-ELK-VM1 | ELK Stack    | 10.1.0.5   | 20.81.128.7 |                   | 20.04.1-Ubuntu        | EAST US 2   | 1                 |
 
 
@@ -111,6 +111,7 @@ A summary of the access policies in place can be found in the table below.
 | DVWA-VM4                | No                  | 10.0.0.6               | 22   | SSH     |
 | DVWA-VM-LB1             | Yes                 | 27.147.187.239         | 80   | HTTP    | 
 
+**Note:** DVWA-VM-LB1 is the Load Balancer that distributes the incoming traffic at HTTP Port 80 equally among four DVWA VMs' Port 80. 
 
 ### Elk Configuration
 
