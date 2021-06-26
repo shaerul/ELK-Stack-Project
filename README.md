@@ -123,7 +123,7 @@ The playbook implements the following tasks:
 - Configure Maximum mapped Memory with `sysctl`
 - Install `docker.io` package with *_apt_* module
 - Install `python3-pip` package with *_apt_* module
-- Install **Docker SDK** for **Python** using `pip`
+- Install **Docker SDK** for python using `pip`
 - Download and launch a **ELK Stack** container with `docker-container`
 - Enable service **docker** on boot with `systemd` (automatically start after system reboot and/or container restart)
 
