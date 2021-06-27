@@ -38,10 +38,26 @@
 
 ![Visitor China 24 Hours MacOS](Images/kibana-404-503-2-days.PNG)
 
+ - In the last 7 days, what country produced the majority of the traffic on the website?
+   - **China** 20.9%
 
-- In the last 7 days, what country produced the majority of the traffic on the website?
+![highest traffic from in 7 days](Images/kibana-highest-traffic-7-days.png)
+
  - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
+   - **China** at **10:00AM**
+
+![highest traffic in hour in 7 days](Images/kibana-hour-heatmap.png)
+ 
  - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+
+   - _`Blank`_ - These are not well known type file downloads
+   - `gz` - Compressed file (generally Unix/Linux/MacOS format)
+   - `css` - Cascaded Style Sheet used for web page theme and decoration
+   - `deb` - Compressed linux software package for debian-based distributions  
+   - `zip` - Compressed archive (usually Microsoft Windows)
+   - `rpm` - Compressed linux software package introduced by RedHat Linus Distribution (rpm - RedHat Package Manager)
+
+![highest traffic in hour in 7 days](Images/kibana-file-download-7-days.PNG)
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
      - Locate the time frame in the last 7 days with the most amount of bytes (activity).
