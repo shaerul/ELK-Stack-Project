@@ -50,15 +50,13 @@
  
  - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
 
-   - `css` - this is a programming language usually used for writing
-          webpage elements and design
-   - `deb` - compressed linux software package, used by debian-based distros 
-          like ubuntu
-   - `gz` - compressed archive using the gzip compression algorithm
-   - `rpm` - similar to `deb` files, these are compressed linux software
+   - ` ` - these are not well known type file downloads
+   - `gz` - compressed file (generally Unix/Linux/MacOS format)
+   - `css` - Cascaded Style Sheet used for web page theme and decoration
+   - `deb` - compressed linux software package for debian-based distributions  
+   - `rpm` - compressed linux software package introduced by RedHat Linus Distribution (rpm - RedHat Package Manager)
           packages used in Red Hat Enterprise based distributions 
-   - `zip` - compressed archive simislar to tarball or `gz` archive
-
+   - `zip` - compressed archive (generally Microsoft Windows)
 
 ![highest traffic in hour in 7 days](Images/kibana-file-download-7-days.PNG)
 
