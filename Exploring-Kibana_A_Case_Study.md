@@ -60,8 +60,14 @@
 ![highest traffic in hour in 7 days](Images/kibana-file-download-7-days.PNG)
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
-     - Locate the time frame in the last 7 days with the most amount of bytes (activity).
-     - In your own words, is there anything that seems potentially strange about this activity?
+  - Locate the time frame in the last 7 days with the most amount of bytes (activity).
+     - **Avg Bytes:** ~8,909
+     - **Unique Visitor(s):** 1
+
+![MostAvgBytes](Images/kibana-max-bytes.png)
+    
+  - In your own words, is there anything that seems potentially strange about this activity?
+     - This seems strange because the amount of unique visitors was very low in comparison to other times. It would need more research, but this could indicate a user exfiltrating data.
 
 4. Filter the data by this event.
      - What is the timestamp for this event?
