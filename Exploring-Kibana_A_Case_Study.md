@@ -71,17 +71,14 @@
      - **The graph shows that only one visitor appeared during this time compared with other occasions. This may be indicative of a user who might be conducting some sort of malicious activity. Further research is required to rule out an incidence of false positives.**
 
 4. Filter the data by this event.
-     - What is the timestamp for this event?
+   - What is the timestamp for this event?
+    - **Timestamp for the Spike:** 2021-06-77 07:35:00 
 
-      - **Timestamp for the Spike:** 2021-06-77 07:35:00 
-
- ![ExactSpike] (Images/kibana-max-bytes-exact-timing.png)
-
-![MostAvgBytesUsers](Images/kibana-max-bytes-exact-timing.png)
+![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
-     - What kind of file was downloaded?
-     - From what country did this activity originate?
-     - What HTTP response codes were encountered by this visitor?
+   - What kind of file was downloaded?
+   - From what country did this activity originate?
+   - What HTTP response codes were encountered by this visitor?
 
 5. Switch to the Kibana Discover page to see more details about this activity.
      - What is the source IP address of this activity?
