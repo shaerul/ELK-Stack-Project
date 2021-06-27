@@ -112,19 +112,16 @@
 6. Finish your investigation with a short overview of your insights. 
 
   - What do you think the user was doing?
-     - Downloading a css layout, specifically a "pretty" one.
+     - Downloading APM collector from www.elastic.co. The APM automatically gathers detailed metrics and errors from inside your applications and push to for ELK Stack Server. 
 
   - Was the file they downloaded malicious? If not, what is the file used for?
-    - Likely it is not malicious, it is a stylesheet or layout for
-             a webpage element. This is used for asthetics and theming.
+    - It doesn’t look malicious at all. User just intend to download a file.
 
   - Is there anything that seems suspicious about this activity?
-    - Not particularly without seeing the actual file itself. This would
-             be considered a normal action when visiting a webpage. 
+    - It is difficult to say without seeing the actual file. When visiting a website, this would be considered a normal action. 
 
    - Is any of the traffic you inspected potentially outside of compliance guidlines?
-     - Unless there is a data download or bandwidth cap of some sort, this
-             looks like it falls within normal user behavior. 
+     - The behavior appears to be normal during file download, unless there is some sort of bandwidth or data limit or policy violation.
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
