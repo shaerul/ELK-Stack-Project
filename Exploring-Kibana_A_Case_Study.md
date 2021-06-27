@@ -61,7 +61,7 @@
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
    - Locate the time frame in the last 7 days with the most amount of bytes (activity).
-    - **Avg Bytes:** 8,586
+    - **Avg Bytes:** 9,000 (Approximately)
     - **Unique Visitor(s):** 2
 
 ![MostAvgBytes](Images/kibana-max-bytes.png)
@@ -77,11 +77,13 @@
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
    - What kind of file was downloaded?
-     - **zip** along with some unknown file types
+     - **zip files** along with some other unknown file type(s)
 
 ![FileType](Images/kibana-max-bytes-file-download.png )
 
    - From what country did this activity originate?
+
+
    - What HTTP response codes were encountered by this visitor?
 
 5. Switch to the Kibana Discover page to see more details about this activity.
