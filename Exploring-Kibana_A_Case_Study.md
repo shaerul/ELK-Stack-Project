@@ -79,17 +79,17 @@
   - What kind of file was downloaded?
     - **zip files** along with some other unknown file type(s)
 
-![FileType](Images/kibana-max-bytes-file-download.png)
+![FileTType](Images/kibana-max-bytes-file-download.png)
 
   - From what country did this activity originate? 
     - **Algeria** 
 
-![FileType](Images/kibana-max-bytes-country.png)
+![Country](Images/kibana-max-bytes-country.png)
 
    - What HTTP response codes were encountered by this visitor? kibana-max-bytes-response-type.png
      - **200**
 
-![FileType](Images/kibana-max-bytes-response-type.png)     
+![ResponseCode](Images/kibana-max-bytes-response-type.png)     
 
 5. Switch to the Kibana Discover page to see more details about this activity.
   - What is the source IP address of this activity?
@@ -105,7 +105,9 @@
     - **https://www.elastic.co/downloads/apm**
 
   - From what website did the visitor's traffic originate?
-    - **http://twitter.com/success/thomas-reiter** 
+    - **http://twitter.com/success/thomas-reiter**  kibana-max-bytes-geo.png
+
+![logDiscover](Images/Images/kibana-max-bytes-geo.png)     
 
 6. Finish your investigation with a short overview of your insights. 
 
