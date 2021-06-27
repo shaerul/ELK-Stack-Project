@@ -82,11 +82,14 @@
 ![FileType](Images/kibana-max-bytes-file-download.png)
 
    - From what country did this activity originate? 
-     - - **Algeria** 
+     - **Algeria** 
 
 ![FileType](Images/kibana-max-bytes-country.png)
 
-   - What HTTP response codes were encountered by this visitor?
+   - What HTTP response codes were encountered by this visitor? kibana-max-bytes-response-type.png
+      - **200**
+
+![FileType](Images/kibana-max-bytes-response-type.png)     
 
 5. Switch to the Kibana Discover page to see more details about this activity.
      - What is the source IP address of this activity?
