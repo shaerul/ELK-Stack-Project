@@ -111,10 +111,20 @@
 
 6. Finish your investigation with a short overview of your insights. 
 
-     - What do you think the user was doing?
-     - Was the file they downloaded malicious? If not, what is the file used for?
-     - Is there anything that seems suspicious about this activity?
-     - Is any of the traffic you inspected potentially outside of compliance guidlines?
+  - What do you think the user was doing?
+     - Downloading a css layout, specifically a "pretty" one.
+
+  - Was the file they downloaded malicious? If not, what is the file used for?
+    - Likely it is not malicious, it is a stylesheet or layout for
+             a webpage element. This is used for asthetics and theming.
+
+  - Is there anything that seems suspicious about this activity?
+    - Not particularly without seeing the actual file itself. This would
+             be considered a normal action when visiting a webpage. 
+
+   - Is any of the traffic you inspected potentially outside of compliance guidlines?
+     - Unless there is a data download or bandwidth cap of some sort, this
+             looks like it falls within normal user behavior. 
 
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
