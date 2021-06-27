@@ -76,36 +76,36 @@
 
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
-   - What kind of file was downloaded?
-     - **zip files** along with some other unknown file type(s)
+  - What kind of file was downloaded?
+    - **zip files** along with some other unknown file type(s)
 
 ![FileType](Images/kibana-max-bytes-file-download.png)
 
-   - From what country did this activity originate? 
-     - **Algeria** 
+  - From what country did this activity originate? 
+    - **Algeria** 
 
 ![FileType](Images/kibana-max-bytes-country.png)
 
    - What HTTP response codes were encountered by this visitor? kibana-max-bytes-response-type.png
-      - **200**
+     - **200**
 
 ![FileType](Images/kibana-max-bytes-response-type.png)     
 
 5. Switch to the Kibana Discover page to see more details about this activity.
-   - What is the source IP address of this activity?
+  - What is the source IP address of this activity?
     - **19.112.190.54** 
     
-   - What are the geo coordinates of this activity?
+  - What are the geo coordinates of this activity?
     - **"lat": 40.88544444, "lon": -83.86863889**
 
-   - What OS was the source machine running?
-    -**ios**
+  - What OS was the source machine running?
+    - **ios**
 
-   - What is the full URL that was accessed?
-    -**https://www.elastic.co/downloads/apm**
+  - What is the full URL that was accessed?
+    - **https://www.elastic.co/downloads/apm**
 
-   - From what website did the visitor's traffic originate?
-    -**http://twitter.com/success/thomas-reiter** 
+  - From what website did the visitor's traffic originate?
+    - **http://twitter.com/success/thomas-reiter** 
 
 6. Finish your investigation with a short overview of your insights. 
 
