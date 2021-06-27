@@ -1,6 +1,6 @@
 # ELK-Stack-Project
 The diagram below is the **Cloud Security Architecture** to be implemented on Microsoft Azure to prepare a reliable, secure and available infrastructrure (Basically a software defined Data Center or SDDC) for running and ELK Stack (Elasticsearch+Logstash+Kibana). This is a precursor to successful SIEM for SoC operations a part of Enterprise Security Management or ESM.
-![Network Diagram](Diagrams/Cloud-Security-Architecture.PNG)
+![Network Diagram](Diagrams/cloud-security-architecture-diagram.png)
 
 The step by step tasks to achevie the Project Goal were done in following few steps
 
