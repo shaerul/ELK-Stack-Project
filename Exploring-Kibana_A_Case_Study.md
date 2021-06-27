@@ -77,8 +77,10 @@
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
    - What kind of file was downloaded?
-     - **zip** along with some unknown file types 
-   
+     - **zip** along with some unknown file types
+
+![FileType](Images/kibana-max-bytes-file-download.png )
+
    - From what country did this activity originate?
    - What HTTP response codes were encountered by this visitor?
 
