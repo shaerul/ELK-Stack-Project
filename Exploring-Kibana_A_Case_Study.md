@@ -71,7 +71,7 @@
      - **The graph shows that only one visitor appeared during this time compared with other occasions. This may be indicative of a user who might be conducting some sort of malicious activity. Further research is required to rule out an incidence of false positives.**
 
 4. Filter the data by this event.
-   - What is the timestamp for this event?
+  - What is the timestamp for this event?
     - **Timestamp for the Spike:** 2021-06-77 07:35:00 
 
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
