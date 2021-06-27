@@ -82,9 +82,9 @@
 ![FileType](Images/kibana-max-bytes-file-download.png)
 
    - From what country did this activity originate? 
-     - - **Alzeria** 
+     - - **Algeria** 
 
-![FileType](Imageskibana-max-bytes-country.png)
+![FileType](Images/kibana-max-bytes-country.png)
 
    - What HTTP response codes were encountered by this visitor?
 
