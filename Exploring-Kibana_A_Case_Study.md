@@ -72,11 +72,13 @@
 
 4. Filter the data by this event.
   - What is the timestamp for this event?
-    - **Timestamp for the Spike:** 2021-06-77 07:35:00 
+    - **Timestamp for the Spike:** 2021-06-27 07:35:00 
 
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
    - What kind of file was downloaded?
+     - **zip** along with some unknown file types 
+   
    - From what country did this activity originate?
    - What HTTP response codes were encountered by this visitor?
 
