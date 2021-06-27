@@ -107,7 +107,7 @@
   - From what website did the visitor's traffic originate?
     - **http://twitter.com/success/thomas-reiter**  kibana-max-bytes-geo.png
 
-![logDiscover](Images/Images/kibana-max-bytes-geo.png)     
+![logDiscover](Images/kibana-max-bytes-geo.png)     
 
 6. Finish your investigation with a short overview of your insights. 
 
