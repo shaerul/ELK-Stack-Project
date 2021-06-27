@@ -61,7 +61,7 @@
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
    - Locate the time frame in the last 7 days with the most amount of bytes (activity).
-    - **Avg Bytes:** ~8,586
+    - **Avg Bytes:** 8,586
     - **Unique Visitor(s):** 2
 
 ![MostAvgBytes](Images/kibana-max-bytes.png)
@@ -71,13 +71,16 @@
      - **The graph shows that only one visitor appeared during this time compared with other occasions. This may be indicative of a user who might be conducting some sort of malicious activity. Further research is required to rule out an incidence of false positives.**
 
 4. Filter the data by this event.
-     - What is the timestamp for this event?
+  - What is the timestamp for this event?
+    - **Timestamp for the Spike:** 2021-06-27 07:35:00 
 
-       -- **Timestamp:** 2021-01-07 15:16:40 
+![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
-     - What kind of file was downloaded?
-     - From what country did this activity originate?
-     - What HTTP response codes were encountered by this visitor?
+   - What kind of file was downloaded?
+     - **zip** along with some unknown file types 
+   
+   - From what country did this activity originate?
+   - What HTTP response codes were encountered by this visitor?
 
 5. Switch to the Kibana Discover page to see more details about this activity.
      - What is the source IP address of this activity?
