@@ -14,6 +14,12 @@
 
 1. Add the sample web log data to Kibana.
 
+- Surf to the homepage `http://20.81.128.7:5601/app/kibana` 
+    
+    - Click on `Load a data set and a Kibana dashboard` under `Add sample data`
+    - Click `Add data` under the `Sample web logs` data pane
+    - Click `View Data` to pull up the dashboard
+
 2. Answer the following questions:
 
     - In the last 7 days, how many unique visitors were located in India?
