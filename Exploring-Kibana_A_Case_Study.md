@@ -77,7 +77,7 @@
 
  ![ExactSpike] (Images/kibana-max-bytes-exact-timing.png)
 
-![MostAvgBytesUsers](Images/kibana-max-bytes-user.png)
+![MostAvgBytesUsers](Images/kibana-max-bytes-exact-timing.png)
  
      - What kind of file was downloaded?
      - From what country did this activity originate?
