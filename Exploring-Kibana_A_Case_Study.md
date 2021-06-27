@@ -50,6 +50,18 @@
  
  - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
 
+   - `css` - this is a programming language usually used for writing
+          webpage elements and design
+   - `deb` - compressed linux software package, used by debian-based distros 
+          like ubuntu
+   - `gz` - compressed archive using the gzip compression algorithm
+   - `rpm` - similar to `deb` files, these are compressed linux software
+          packages used in Red Hat Enterprise based distributions 
+   - `zip` - compressed archive simislar to tarball or `gz` archive
+
+
+![highest traffic in hour in 7 days](Images/kibana-file-download-7-days.PNG)
+
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
      - Locate the time frame in the last 7 days with the most amount of bytes (activity).
      - In your own words, is there anything that seems potentially strange about this activity?
