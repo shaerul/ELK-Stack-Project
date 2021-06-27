@@ -79,10 +79,12 @@
    - What kind of file was downloaded?
      - **zip files** along with some other unknown file type(s)
 
-![FileType](Images/kibana-max-bytes-file-download.png )
+![FileType](Images/kibana-max-bytes-file-download.png)
 
-   - From what country did this activity originate?
+   - From what country did this activity originate? 
+     - - **Algeria** 
 
+![FileType](Images/kibana-max-bytes-country.png)
 
    - What HTTP response codes were encountered by this visitor?
 
