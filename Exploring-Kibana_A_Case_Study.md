@@ -28,14 +28,20 @@
 ![visitor India 7 days](Images/kibana-visitor-from-india.PNG)
 
  - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
-   - some
+   - **7**
 
 ![Visitor China 24 Hours MacOS](Images/kibana-visitor-from-china-24-hours.PNG)
 
-    - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
-    - In the last 7 days, what country produced the majority of the traffic on the website?
-    - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
-    - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
+ - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
+   - **404 Errors:** 0%
+   - **503 Errors:** 0%
+
+![Visitor China 24 Hours MacOS](Images/kibana-404-503-2-days.PNG)
+
+
+- In the last 7 days, what country produced the majority of the traffic on the website?
+ - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
+ - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
 
 3. Now that you have a feel for the data, Let's dive a bit deeper. Look at the chart that shows Unique Visitors Vs. Average Bytes.
      - Locate the time frame in the last 7 days with the most amount of bytes (activity).
