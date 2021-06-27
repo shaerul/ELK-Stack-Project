@@ -50,13 +50,12 @@
  
  - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type (use Google if you aren't sure about a particular file type).
 
-   - ` ` - these are not well known type file downloads
-   - `gz` - compressed file (generally Unix/Linux/MacOS format)
+   - _`Blank`_ - These are not well known type file downloads
+   - `gz` - Compressed file (generally Unix/Linux/MacOS format)
    - `css` - Cascaded Style Sheet used for web page theme and decoration
-   - `deb` - compressed linux software package for debian-based distributions  
-   - `rpm` - compressed linux software package introduced by RedHat Linus Distribution (rpm - RedHat Package Manager)
-          packages used in Red Hat Enterprise based distributions 
-   - `zip` - compressed archive (generally Microsoft Windows)
+   - `deb` - Compressed linux software package for debian-based distributions  
+   - `zip` - Compressed archive (usually Microsoft Windows)
+   - `rpm` - Compressed linux software package introduced by RedHat Linus Distribution (rpm - RedHat Package Manager)
 
 ![highest traffic in hour in 7 days](Images/kibana-file-download-7-days.PNG)
 
