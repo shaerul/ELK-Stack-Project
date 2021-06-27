@@ -112,7 +112,7 @@
 6. Finish your investigation with a short overview of your insights. 
 
   - What do you think the user was doing?
-     - Downloading APM collector from www.elastic.co. The APM automatically gathers detailed metrics and errors from inside your applications and push to for ELK Stack Server. 
+     - Seems to be downloading APM collector from www.elastic.co. The APM automatically gathers detailed metrics and errors from inside applications and push to for ELK Stack Server. 
 
   - Was the file they downloaded malicious? If not, what is the file used for?
     - It doesn’t look malicious at all. User just intend to download a file.
