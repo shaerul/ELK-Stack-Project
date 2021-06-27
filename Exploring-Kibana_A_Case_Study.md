@@ -14,17 +14,23 @@
 
 1. Add the sample web log data to Kibana.
 
-- Surf to the homepage `http://20.81.128.7:5601/app/kibana` 
+- Surf to the ELK Server's Publice IP that is Kibana's Home Page `http://20.81.128.7:5601/app/kibana` 
     
-    - Click on `Load a data set and a Kibana dashboard` under `Add sample data`
-    - Click `Add data` under the `Sample web logs` data pane
-    - Click `View Data` to pull up the dashboard
+   - Click on `Load a data set and a Kibana dashboard` under `Add sample data`
+   - Click `Add data` under the `Sample web logs` data pane
+   - Click `View Data` to pull up the dashboard
 
 2. Answer the following questions:
 
-    - In the last 7 days, how many unique visitors were located in India?
+ - In the last 7 days, how many unique visitors were located in India?
+   - **237**
 
-    - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
+![visitor India 7 days](Images/kibana-visitor-from-india.PNG)
+
+ - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
+   - some
+
+![Visitor China 24 Hours MacOS](Images/kibana-visitor-from-china-24-hours.PNG)
 
     - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
     - In the last 7 days, what country produced the majority of the traffic on the website?
