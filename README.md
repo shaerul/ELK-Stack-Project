@@ -204,7 +204,7 @@ SSH into the control node and follow the steps below:
 ![accessed_elk_server](Images/accessing-kibana-for-the-first-time.PNG)
 
 
-### Using the Metricbeat and Filebeat Playbooks
+### Installing Metricbeat and Filebeat using ansible-playbook and .yml config files
 
 #### Filebeat 
 
@@ -228,7 +228,7 @@ host: "10.1.0.4:5601"
 
 #### Metricbeat
 
-- Edit [/etc/ansible/files/metricbeat-config.yml](Ansible/files/metricbeat-config.yml) in the ansible on the control node to include the ELK Stack IP address.
+- Edit [/etc/ansible/files/metricbeat-config.yml](Ansible/files/metricbeat-config.yml) in the Jump Box Ansible container on the control node to include the ELK Stack IP address.
 - **10.1.0.4** is the private IP Address of ELK Stack Server.
 
 ```yml
