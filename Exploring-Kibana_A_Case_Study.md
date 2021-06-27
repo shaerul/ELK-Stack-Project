@@ -72,7 +72,7 @@
 
 4. Filter the data by this event.
   - What is the timestamp for this event?
-    - **Timestamp for the Spike:** 2021-06-27 07:35:00 
+    - **Timestamp for the Spike:** 2021-06-27 07:36:55 (precisely with unique user count 1) 
 
 ![ExactSpike](Images/kibana-max-bytes-exact-timing.png)
  
