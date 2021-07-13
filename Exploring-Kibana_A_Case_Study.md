@@ -105,7 +105,7 @@
     - **https://www.elastic.co/downloads/apm**
 
   - From what website did the visitor's traffic originate?
-    - **http://twitter.com/success/thomas-reiter**  kibana-max-bytes-geo.png
+    - **http://twitter.com/success/thomas-reiter**
 
 ![logDiscover](Images/kibana-max-bytes-geo.png)     
 
