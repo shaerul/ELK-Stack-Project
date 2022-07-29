@@ -39,7 +39,7 @@ Practically in a Software Defined Data Center hosted in a public or private clou
 The above base diagram plotted as **Cloud Security Architecture** has covered all the above criteria. Most of the attributes have been inherited from the Azure Cloud iteself and the rest have been configured reasonablity as much as required by the Project Objective. Too much Security hardening might have restricted us from getting the intended result.
 
 | Name        | Description                                    | 
-|------------ |:-----------------------------------------------|
+|------------ |------------------------------------------------|
 | Security    | - Network Security Group                       |
 |             | - Access List                                  |
 |             | - Containerized Applicaton (Apache, MySQL)     |
